@@ -21,6 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+@file:Suppress("DEPRECATION") // Note that future versions of ScreenshotRule will be based of ActivityScenario.
 package com.shopify.testify.internal.helpers
 
 import android.app.Activity
@@ -73,7 +74,7 @@ internal class OrientationHelper<T : Activity>(
     private val Activity.isLandscape: Boolean
         get() {
             val size = Point(-1, -1)
-            this.windowManager?.defaultDisplay?.getRealSize(size)
+            this.display?.getRealSize(size)
             return size.y < size.x
         }
 

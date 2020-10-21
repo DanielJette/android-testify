@@ -42,11 +42,10 @@ internal object DeviceIdentifier {
     val DEFAULT_NAME_FORMAT = "c_n"
 
     private fun getDeviceDimensions(context: Context): Pair<Int, Int> {
-        val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
         val metrics = DisplayMetrics()
-        val display = windowManager.defaultDisplay
+        val display = context.display
 
-        display.getRealMetrics(metrics)
+        display?.getRealMetrics(metrics)
         val realWidth = metrics.widthPixels
         val realHeight = metrics.heightPixels
 

@@ -14,7 +14,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.shopify.testify'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     compileOptions {
         sourceCompatibility 1.8
@@ -28,7 +28,7 @@ android {
     defaultConfig {
         applicationId "com.shopify.testify.sample"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 

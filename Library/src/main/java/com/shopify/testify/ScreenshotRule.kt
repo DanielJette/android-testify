@@ -21,6 +21,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
+@file:Suppress("DEPRECATION") // Note that future versions of ScreenshotRule will be based of ActivityScenario.
 package com.shopify.testify
 
 import android.app.Activity
